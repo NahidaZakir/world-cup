@@ -1,0 +1,243 @@
+/* import poppins font */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* common css */
+.half-width {
+    width: 50%;
+}
+
+.container {
+    width: 1321px;
+}
+
+/* main css */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Banner css */
+.banner {
+
+    height: 646px;
+    background-color: #161616;
+    border-radius: 30px;
+    display: flex;
+    margin-top: 50px;
+}
+
+/* banner content css */
+.banner-content {
+    color: #FFFFFF;
+    margin: 111px 0px 111px 106px;
+}
+
+.banner-title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 80px;
+}
+
+.banner-para {
+    font-size: 16px;
+    line-height: 26px;
+    margin: 20px 0px 30px 0px;
+}
+
+/* banner button css */
+
+.blue-button {
+    background-color: rgb(0, 0, 205);
+    width: 187px;
+    height: 56px;
+    border-radius: 5px;
+    padding: 16px 25px;
+    border: none;
+}
+
+.blue-button a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+
+}
+
+.fa-greater-than {
+    font-size: 20px;
+    color: #ffffff;
+    margin-left: 10px;
+}
+
+/* banner-image css */
+.banner-image img {
+    width: 581px;
+    height: 613px;
+    margin: 33px 69px 0px 24px;
+}
+
+/* blog section css */
+.blog-section {
+    margin: 130px 0px;
+    display: flex;
+}
+
+/* links bar css */
+.links-bar {
+    width: 252px;
+    height: 252px;
+    background-color: #161616;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.linkbutton {
+    width: 252px;
+    height: 64px;
+    background-color: #FFFFFF;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.linkbutton a {
+    font-size: 20px;
+    font-weight: 500;
+    color: #161616;
+    text-decoration: none;
+    line-height: 64px;
+
+}
+
+.active-button-color {
+    background-color: rgb(0, 0, 205);
+    margin-bottom: 0px;
+}
+
+.active-button-color a {
+    color: #FFFFFF;
+}
+
+/* blogs-part css */
+.blogs-part {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.blog {
+    width: 312px;
+    height: 362px;
+    border-radius: 5px;
+    margin: 0px 0px 23px 15px;
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+}
+
+.blog-content {
+    padding: 20px;
+}
+
+.blog-content button {
+    width: 100px;
+    height: 32px;
+    border: 2px solid rgba(22, 22, 22, 1);
+    border-radius: 5px;
+    background-color: #FFFFFF;
+}
+
+.blog-content button a {
+    color: #161616;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-decoration: none;
+}
+
+.blog-content p {
+    font-weight: 600;
+    font-size: 18px;
+    color: #161616;
+
+}
+
+.time-date {
+    display: flex;
+
+}
+
+.time,
+.date {
+    display: flex;
+    margin-right: 30px;
+    width: 60px;
+    height: 26px;
+    align-items: center;
+}
+
+.time p,
+.date p {
+    color: rgba(22, 22, 22, 0.7);
+    text-align: center;
+    margin-left: 10px;
+}
+
+footer {
+    width: 100%;
+    background-color: #161616;
+}
+
+.footer-title {
+    font-weight: 600;
+    color: #FFFFFF;
+    font-size: 40px;
+    line-height: 60px;
+    text-align: center;
+    margin: 130px 0px 50px 0px;
+}
+
+hr {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-links {
+    width: 898px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-link p {
+    color: rgba(185, 185, 185, 1);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+
+}
+
+.social-icons {
+    margin: 20px 0px 130px 0px;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-brands,
+.fa-solid {
+    color: white;
+    font-size: 20px;
+}
