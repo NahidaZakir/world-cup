@@ -54,7 +54,7 @@ main {
 
 /* banner button css */
 
-.blue-button {
+.blue-button button {
     background-color: rgb(0, 0, 205);
     width: 187px;
     height: 56px;
@@ -80,9 +80,10 @@ main {
 
 /* banner-image css */
 .banner-image img {
-    width: 581px;
-    height: 613px;
-    margin: 33px 69px 0px 24px;
+    /* width: 581px;
+    height: 613px; */
+    width: 100%;
+    /* margin: 33px 69px 0px 24px; */
 }
 
 /* blog section css */
@@ -123,8 +124,13 @@ main {
     margin-bottom: 0px;
 }
 
+
 .active-button-color a {
     color: #FFFFFF;
+}
+
+.button-margin {
+    margin-bottom: 0px;
 }
 
 /* blogs-part css */
@@ -190,6 +196,8 @@ main {
     margin-left: 10px;
 }
 
+
+
 footer {
     width: 100%;
     background-color: #161616;
@@ -240,4 +248,210 @@ footer {
 .fa-solid {
     color: white;
     font-size: 20px;
+}
+
+/* Responsive website for tablet */
+/* mobile veiw */
+
+
+@media only screen and (max-width:688px) {
+    .container {
+        width: 100%;
+    }
+
+    .banner {
+        flex-direction: column;
+        align-items: center;
+        height: 472px;
+        margin-top: 50px;
+    }
+
+    /* banner content css */
+    .banner-content {
+        margin: 28px 53px 0px 28px;
+        align-items: center;
+    }
+
+    .banner-title {
+        font-size: 22px;
+        line-height: 33px;
+        text-align: center;
+    }
+
+    .banner-para {
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.8);
+        line-height: 24px;
+        margin: 20px 0px 28px 0px;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    /* banner button css */
+    .blue-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .blue-button button {
+        margin: 0;
+        width: 161px;
+        height: 40px;
+        padding: 8px 12px;
+    }
+
+    /* banner-image css */
+    .banner-image img {
+        margin: 10px 38px 0px 63px;
+        width: 80%;
+    }
+
+    .blog-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0px;
+    }
+
+    /*link-bar css */
+    .links-bar {
+        background-color: #ffffff;
+    }
+
+    .linkbutton {
+        width: 210px;
+        height: 48px;
+        border: 1px solid #E8E8E8;
+
+    }
+
+    .linkbutton a {
+        line-height: 50px;
+        text-align: center;
+    }
+
+    .blogs-part {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .view-all {
+        display: none;
+    }
+
+    .footer-title {
+        font-size: 22px;
+        line-height: 33px;
+    }
+
+    .footer-links {
+        width: 898px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+/* Tablet view */
+@media only screen and (min-width:689px) and (max-width:992px) {
+    .container {
+        width: 100%;
+    }
+
+    .banner {
+        height: 398px;
+        margin-top: 50px;
+    }
+
+    /* banner content css */
+    .banner-content {
+        margin: 28px 50px;
+    }
+
+    .banner-title {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .banner-para {
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.8);
+        line-height: 24px;
+        margin: 20px 0px 28px 0px;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    /* banner button css */
+    .blue-button {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    /* banner-image css */
+    .banner-image img {
+        width: 39%;
+        position: absolute;
+        top: 60px;
+    }
+
+    .blog-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0px;
+    }
+
+    /*link-bar css */
+    .links-bar {
+        background-color: #ffffff;
+        display: flex;
+        justify-content: space-between;
+        height: 66px;
+        width: 100%;
+    }
+
+    .linkbutton {
+        width: 230px;
+        height: 64px;
+        border: 1px solid #E8E8E8;
+
+    }
+
+    .linkbutton a {
+        line-height: 60px;
+        text-align: center;
+    }
+
+    .blogs-part {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-title {
+        font-size: 40px;
+        line-height: 60px;
+    }
+
+    .footer-links {
+        width: 635px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 115px;
+    }
+}
+
+@media only screen and (min-width:993px) {
+    .view-all {
+        display: none;
+    }
 }
